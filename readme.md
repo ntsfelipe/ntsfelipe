@@ -4,13 +4,13 @@
   <img alt="gif de introdução" src="https://s7.gifyu.com/images/SXDTl.gif">
  <h2 align="center">Sobre mim👨‍💻</h2>
  <p/>
-  • 📅Tenho 18 anos;<br/> <img align="right" width="200px" alt="pong gif" src="https://media1.tenor.com/m/T3H92Qstl68AAAAd/p-ong.gif"></p>
+  • 📅 Tenho 18 anos;<br/> <img align="right" width="200px" alt="pong gif" src="https://media1.tenor.com/m/T3H92Qstl68AAAAd/p-ong.gif"></p>
    
   • 📲 Sou um estudante de Engenharia de Software no Inteli;<br/>
   
   • 🤖 Iniciante em Python, HTML e CSS;<br/>
   
-  • 🏓Ex jogador federado de tênis de mesa.<br/>
+  • 🏓 Ex jogador federado de tênis de mesa.<br/>
   
 <hr>
   Meu buddy e amigo que me acompanha nesse novo começo é o <a href="https://github.com/MiguelClaret">Miguel Claret</a>!
