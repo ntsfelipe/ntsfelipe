@@ -1,85 +1,21 @@
-```html
-<div style="text-align: center;">
-  <canvas id="pongCanvas" width="600" height="400" style="border:1px solid black;"></canvas>
-</div>
-<script>
-  const canvas = document.getElementById('pongCanvas');
-  const ctx = canvas.getContext('2d');
-
-  let ballX = canvas.width / 2;
-  let ballY = canvas.height / 2;
-  let ballSpeedX = 2;
-  let ballSpeedY = 2;
-  const ballRadius = 10;
-
-  const paddleWidth = 10;
-  const paddleHeight = 100;
-
-  let leftPaddleY = canvas.height / 2 - paddleHeight / 2;
-  let rightPaddleY = canvas.height / 2 - paddleHeight / 2;
-  const paddleSpeed = 4;
-
-  function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // Ball
-    ctx.beginPath();
-    ctx.arc(ballX, ballY, ballRadius, 0, Math.PI * 2);
-    ctx.fillStyle = 'blue';
-    ctx.fill();
-    ctx.closePath();
-
-    // Left paddle
-    ctx.fillStyle = 'green';
-    ctx.fillRect(0, leftPaddleY, paddleWidth, paddleHeight);
-
-    // Right paddle
-    ctx.fillStyle = 'red';
-    ctx.fillRect(canvas.width - paddleWidth, rightPaddleY, paddleWidth, paddleHeight);
-  }
-
-  function update() {
-    ballX += ballSpeedX;
-    ballY += ballSpeedY;
-
-    // Ball collision with top and bottom walls
-    if (ballY - ballRadius < 0 || ballY + ballRadius > canvas.height) {
-      ballSpeedY = -ballSpeedY;
-    }
-
-    // Ball collision with paddles
-    if (
-      ballX - ballRadius < paddleWidth &&
-      ballY > leftPaddleY &&
-      ballY < leftPaddleY + paddleHeight
-    ) {
-      ballSpeedX = -ballSpeedX;
-    }
-
-    if (
-      ballX + ballRadius > canvas.width - paddleWidth &&
-      ballY > rightPaddleY &&
-      ballY < rightPaddleY + paddleHeight
-    ) {
-      ballSpeedX = -ballSpeedX;
-    }
-
-    // Ball out of bounds
-    if (ballX - ballRadius < 0 || ballX + ballRadius > canvas.width) {
-      ballX = canvas.width / 2;
-      ballY = canvas.height / 2;
-    }
-
-    // Automatic paddle movement
-    leftPaddleY += (ballY - (leftPaddleY + paddleHeight / 2)) * 0.1;
-    rightPaddleY += (ballY - (rightPaddleY + paddleHeight / 2)) * 0.1;
-  }
-
-  function gameLoop() {
-    update();
-    draw();
-    requestAnimationFrame(gameLoop);
-  }
-
-  gameLoop();
-</script>
+<h1 align="center">Olá, eu sou o Felipe!👋</h1>
+<br/>
+ <p align="center">
+  <img alt="gif de introdução" src="https://s7.gifyu.com/images/SXDTl.gif">
+ <h2 align="center">Sobre mim👨‍💻</h2>
+ <p/>
+  • 📅Tenho 18 anos;<br/>
+   
+  • 📲 Sou um estudante de Engenharia de Software no Inteli;<br/>
+  
+  • 🤖 Iniciante em Python, HTML e CSS;<br/>
+  
+  • 🏓Ex jogador federado de tênis de mesa.<br/>
+  
+<hr>
+  Meu buddy e amigo que me acompanha nesse novo começo é o <a href="https://github.com/MiguelClaret">Miguel Claret</a>!
+<hr>
+<h3>Entre em contato comigo:</h3>
+  <p><img align="center" width=30px src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png"> <a href="https://www.instagram.com/ntsfelipe/">@ntsfelipe</a></p>
+  <p><img align="center" width=30px src="https://static.vecteezy.com/system/resources/thumbnails/014/440/980/small_2x/email-message-icon-design-in-blue-circle-png.png"> felipe.teixeira@sou.inteli.edu.br</p>
+<hr>
