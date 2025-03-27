@@ -8,7 +8,7 @@
    
   • 📲 Sou um estudante de Engenharia de Software no Inteli;<br/>
   
-  • 🤖 Iniciante em Python, HTML e CSS;<br/>
+  • 🤖 Iniciante em Python, HTML, CSS e JavaScript;<br/>
   
   • 🏓 Ex jogador federado de tênis de mesa.<br/>
   
